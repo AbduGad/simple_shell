@@ -11,11 +11,14 @@ void fork_execute(char **CmdTok, char **EnvironVars, int *ExitStat)
 {
 	pid_t child;
 
-	*ExitStat = 0;
+	/* *ExitStat = 0;*/
 	child = fork();
 	if (child == 0)
 	{
-		execve(CmdTok[0], CmdTok, EnvironVars);
+		if (execve(CmdTok[0], CmdTok, EnvironVars) == -1)
+			*ExitStat = 2;
+		else
+			*ExitStat = 0;
 	}
 	else if (child == -1)
 	{
