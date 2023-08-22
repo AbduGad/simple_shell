@@ -3,17 +3,26 @@
  * @brief 
  * 
  */
-void built_ins(char *Tok0, char **envs, int *ExitStat)
+int built_ins(char **CmdTok, int TokIndex, char **envs, int *ExitStat)
 {
-	built_in commands[] = {{"env", env_fun}, NULL};
+	built_in commands[2] = {{"env", env_fun}};
 	int i;
 
-	if (Tok0[1])
-		*ExitStat = 2;
-	for (i = 0; commands[i]; i++)
+	if (!CmdTok || !CmdTok[0])
+		return (1);
+	if (CmdTok[1])
 	{
-		if (!_strcmp(Tok0, commands[i]))
-			commands[i].function(envs);
+		*ExitStat = 2;
+		return (1);
 	}
-	
+	for (i = 0; i < 1; i++)
+	{
+		if (!_strcmp(CmdTok[0], commands[i].command))
+		{
+			commands[i].function(envs);
+			free_grid(CmdTok, TokIndex);
+			return (0);
+		}
+	}
+	return (1);
 }

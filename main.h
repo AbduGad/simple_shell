@@ -49,5 +49,7 @@ void signal_handler(int signum);
 void print_error(int ShellRunCount, char **av,
 		char **CmdTok, int *ExitStat);
 void print_integer(int ShellRunCount);
+void env_fun(char **envs);
+int built_ins(char **CmdTok, int TokIndex, char **envs, int *ExitStat);
 
 #endif

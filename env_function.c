@@ -5,20 +5,11 @@
  */
 void env_fun(char **envs)
 {
-	int row, colomun;
+	int row;
 
-	colomun = 0;
-	for (row = 0; envs && envs[row];)
+	for (row = 0; envs && envs[row]; row++)
 	{
-		if (!env[row][colomun])
-		{
-			colomun = 0;
-			row++;
-		}
-		else
-		{
-			write(1, env[row][colomun]);
-			colomun++;
-		}
+		write(1, envs[row], _strlen(envs[row]));
+		write(1, "\n",1);
 	}
 }

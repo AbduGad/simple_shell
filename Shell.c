@@ -29,6 +29,8 @@ int main(int ac, char **av, char **envs)
 			write(1, "$ ", 2);
 
 		CmdTok = input_line(&Tokindex, PathTok, &PathTokIndex, &ExitStat, PATHcpy);
+		if (!built_ins(CmdTok, Tokindex, envs, &ExitStat))
+			continue;
 		checkaccess_return = check_access_update_token(CmdTok, PathTok, &ExitStat);
 		if (!checkaccess_return)
 			fork_execute(CmdTok, envs, &ExitStat);
