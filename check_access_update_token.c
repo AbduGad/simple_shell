@@ -1,6 +1,8 @@
 #include "main.h"
+int check_access_update_token(char **token, char **PathTok, int *ExitStat);
 /**
- * check_access_update_token - completes the command in needed and checks if its in lubrary
+ * check_access_update_token - completes the command in
+ * needed and checks if its in lubrary
  * @token: line input from user
  * @PathTok: tokenised PATH
  * @ExitStat: update status
@@ -13,7 +15,8 @@ int check_access_update_token(char **token, char **PathTok, int *ExitStat)
 
 	PathTokIndex = 0;
 	if (token == NULL || *token == NULL)
-		return 1; /*error*/
+		return (1); /*error*/
+
 	if (PathTok == NULL || PathTok[PathTokIndex] == NULL)
 	{
 		if (token[0][0] != '.' && token[0][0] != '/')
@@ -22,7 +25,9 @@ int check_access_update_token(char **token, char **PathTok, int *ExitStat)
 			return (1);
 		}
 		if (!access(token[0], F_OK | X_OK))
+		{
 			return (0);
+		}
 		else
 		{
 			*ExitStat = 127;
