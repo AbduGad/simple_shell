@@ -1,7 +1,11 @@
 #include "main.h"
 /**
- * @brief 
- * 
+ * built_ins - function
+ * @CmdTok: command token
+ * @TokIndex: token index
+ * @envs: environment
+ * @ExitStat: exist status
+ * Return: 1 or 0
  */
 int built_ins(char **CmdTok, int TokIndex, char **envs, int *ExitStat)
 {

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * @brief 
- * 
+ * env_fun - function
+ * @envs: enviroment
  */
 void env_fun(char **envs)
 {
@@ -10,6 +10,6 @@ void env_fun(char **envs)
 	for (row = 0; envs && envs[row]; row++)
 	{
 		write(1, envs[row], _strlen(envs[row]));
-		write(1, "\n",1);
+		write(1, "\n", 1);
 	}
 }
