@@ -118,7 +118,7 @@ Write a README with the description of your project
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 GitHub
 
-> [!NOTE]
+> [!WARNING]
 > There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator.
 
 More Info
@@ -200,5 +200,6 @@ $ cat test_ls_2 | ./hsh
 hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
-Checks
-The Checker will be released at the end of the project (1-2 days before the deadline). We strongly encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task 8. Test suite.
+
+> [!IMPORTANT] Checks
+> The Checker will be released at the end of the project (1-2 days before the deadline). We strongly encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task 8. Test suite.
