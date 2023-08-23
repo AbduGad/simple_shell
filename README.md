@@ -118,13 +118,15 @@ Write a README with the description of your project
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 GitHub
 
-[x] There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator.
+> [!IMPORTANT]
+> There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator.
 
 More Info
-Output
-Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
-The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
-Example of error with sh:
+
+> [!IMPORTANT] Output
+> Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
+> The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
+> Example of error with sh:
 
 $ echo "qwerty" | /bin/sh
 /bin/sh: 1: qwerty: not found
