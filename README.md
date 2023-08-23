@@ -124,7 +124,9 @@ GitHub
 More Info
 
 > [!NOTE]
-> Output
+
+> ### Output
+>
 > Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
 > The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
 > Example of error with sh:
@@ -201,6 +203,6 @@ hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
 
-> [!NOTE] Checks
+> [!NOTE]Checks
 > The Checker will be released at the end of the project (1-2 days before the deadline).
 > We strongly encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task 8. Test suite.
