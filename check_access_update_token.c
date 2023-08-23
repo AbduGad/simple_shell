@@ -6,7 +6,7 @@ int check_access_update_token(char **token, char **PathTok, int *ExitStat);
  * @token: line input from user
  * @PathTok: tokenised PATH
  * @ExitStat: update status
- * Return: 0 on success 1 if no access or just library lik "/bin/"
+ * Return: 0 on success 1 if no access or just library like "/bin/"
  */
 int check_access_update_token(char **token, char **PathTok, int *ExitStat)
 {

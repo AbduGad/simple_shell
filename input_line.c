@@ -6,7 +6,7 @@
  * @PathTokIndex: index
  * @PATHcopy: copy of the PATH env
  * @ExitStat: update status
- * Return: tokinsed input line from user
+ * Return: tokenised input line from user
  */
 char **input_line(int *TokIndex, char **PathTok,
 int *PathTokIndex, int *ExitStat, char *PATHcopy)
