@@ -147,7 +147,7 @@ getcwd (man 3 getcwd)
 getline (man 3 getline)
 getpid (man 2 getpid)
 isatty (man 3 isatty)
-kill (man 2 kill).
+kill (man 2 kill)
 malloc (man 3 malloc)
 open (man 2 open)
 opendir (man 3 opendir)
