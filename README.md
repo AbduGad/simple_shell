@@ -1,13 +1,15 @@
 0x16. C - Simple Shell
+
 C
+
 Group project
 Syscall
- By: Julien Barbier
- Weight: 10
- Project to be done in teams of 2 people (your team: Seth Ketsi, Abdulrahman Gad)
- Project will start Aug 9, 2023 6:00 AM, must end by Aug 24, 2023 6:00 AM
- Checker will be released at Aug 23, 2023 1:12 AM
- An auto review will be launched at the deadline
+By: Julien Barbier
+Weight: 10
+Project to be done in teams of 2 people (your team: Seth Ketsi, Abdulrahman Gad)
+Project will start Aug 9, 2023 6:00 AM, must end by Aug 24, 2023 6:00 AM
+Checker will be released at Aug 23, 2023 1:12 AM
+An auto review will be launched at the deadline
 Concepts
 For this project, we expect you to look at these concepts:
 
@@ -15,8 +17,6 @@ Everything you need to know to start coding your own shell
 Approaching a Project
 Background Context
 Write a simple UNIX command interpreter.
-
-
 
 ^ “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
 
@@ -111,7 +111,7 @@ Use system calls only when you need to (why?)
 Write a README with the description of your project
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 GitHub
-*There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *
+_There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. _
 
 More Info
 Output
@@ -139,7 +139,7 @@ close (man 2 close)
 closedir (man 3 closedir)
 execve (man 2 execve)
 exit (man 3 exit)
-_exit (man 2 _exit)
+\_exit (man 2 \_exit)
 fflush (man 3 fflush)
 fork (man 2 fork)
 free (man 3 free)
@@ -155,9 +155,9 @@ perror (man 3 perror)
 read (man 2 read)
 readdir (man 3 readdir)
 signal (man 2 signal)
-stat (__xstat) (man 2 stat)
-lstat (__lxstat) (man 2 lstat)
-fstat (__fxstat) (man 2 fstat)
+stat (**xstat) (man 2 stat)
+lstat (**lxstat) (man 2 lstat)
+fstat (\_\_fxstat) (man 2 fstat)
 strtok (man 3 strtok)
 wait (man 2 wait)
 waitpid (man 2 waitpid)
@@ -167,7 +167,7 @@ write (man 2 write)
 Compilation
 Your shell will be compiled this way:
 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 \*.c -o hsh
 Testing
 Your shell should work like this in interactive mode:
 
