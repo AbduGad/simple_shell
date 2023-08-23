@@ -1,10 +1,9 @@
 # 0x16. C - Simple Shell
 
-C
+## C | Group project Syscall
 
-Group project
-Syscall
-By: Julien Barbier
+### By: Julien Barbier
+
 Weight: 10
 Project to be done in teams of 2 people (your team: Seth Ketsi, Abdulrahman Gad)
 Project will start Aug 9, 2023 6:00 AM, must end by Aug 24, 2023 6:00 AM
