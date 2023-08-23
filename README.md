@@ -4,7 +4,7 @@
 
 ### By: Julien Barbier
 
-** Weight: 10 **
+Weight: 10
 
 ### Project to be done in teams of 2 people (your team: Seth Ketsi, Abdulrahman Gad)
 
@@ -21,7 +21,7 @@ Approaching a Project
 Background Context
 Write a simple UNIX command interpreter.
 
-^ “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
+### “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
 
 Important message from Julien
 It’s time for the famous Simple Shell project. This is one of the most anticipated project and also one that will challenge you a lot about everything you have learn so far:
@@ -67,7 +67,8 @@ The shell is an incredibly cool project. GL HF!
 
 Julien
 
-Resources
+### Resources
+
 Read or watch:
 
 Unix shell
@@ -100,7 +101,9 @@ You are tasked to come up with solutions for the tasks below yourself to meet wi
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
 You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
+
 Requirements
+
 General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -114,7 +117,8 @@ Use system calls only when you need to (why?)
 Write a README with the description of your project
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 GitHub
-_There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. _
+
+\_ \_ There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. \_ \_
 
 More Info
 Output
