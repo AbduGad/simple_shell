@@ -1,14 +1,19 @@
-0x16. C - Simple Shell
-C
-Group project
-Syscall
- By: Julien Barbier
- Weight: 10
- Project to be done in teams of 2 people (your team: Seth Ketsi, Abdulrahman Gad)
- Project will start Aug 9, 2023 6:00 AM, must end by Aug 24, 2023 6:00 AM
- Checker will be released at Aug 23, 2023 1:12 AM
- An auto review will be launched at the deadline
-Concepts
+# 0x16. C - Simple Shell
+
+## C | Group project Syscall
+
+### By: Julien Barbier
+
+Weight: 10
+
+### Project to be done in teams of 2 people (your team: Seth Ketsi, Abdulrahman Gad)
+
+Project will start Aug 9, 2023 6:00 AM, must end by Aug 24, 2023 6:00 AM
+Checker will be released at Aug 23, 2023 1:12 AM
+An auto review will be launched at the deadline
+
+### Concepts
+
 For this project, we expect you to look at these concepts:
 
 Everything you need to know to start coding your own shell
@@ -16,9 +21,7 @@ Approaching a Project
 Background Context
 Write a simple UNIX command interpreter.
 
-
-
-^ “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
+### “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
 
 Important message from Julien
 It’s time for the famous Simple Shell project. This is one of the most anticipated project and also one that will challenge you a lot about everything you have learn so far:
@@ -64,7 +67,8 @@ The shell is an incredibly cool project. GL HF!
 
 Julien
 
-Resources
+### Resources
+
 Read or watch:
 
 Unix shell
@@ -97,7 +101,9 @@ You are tasked to come up with solutions for the tasks below yourself to meet wi
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
 You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
+
 Requirements
+
 General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -111,19 +117,26 @@ Use system calls only when you need to (why?)
 Write a README with the description of your project
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 GitHub
-*There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *
+
+> [!WARNING]
+> There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator.
 
 More Info
-Output
-Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
-The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
-Example of error with sh:
+
+> [!NOTE]
+>
+> ### Output
+>
+> Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
+> The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
+> Example of error with sh:
 
 $ echo "qwerty" | /bin/sh
 /bin/sh: 1: qwerty: not found
 $ echo "qwerty" | /bin/../bin/sh
 /bin/../bin/sh: 1: qwerty: not found
 $
+
 Same error with your program hsh:
 
 $ echo "qwerty" | ./hsh
@@ -139,7 +152,7 @@ close (man 2 close)
 closedir (man 3 closedir)
 execve (man 2 execve)
 exit (man 3 exit)
-_exit (man 2 _exit)
+\_exit (man 2 \_exit)
 fflush (man 3 fflush)
 fork (man 2 fork)
 free (man 3 free)
@@ -155,9 +168,9 @@ perror (man 3 perror)
 read (man 2 read)
 readdir (man 3 readdir)
 signal (man 2 signal)
-stat (__xstat) (man 2 stat)
-lstat (__lxstat) (man 2 lstat)
-fstat (__fxstat) (man 2 fstat)
+stat (**xstat) (man 2 stat)
+lstat (**lxstat) (man 2 lstat)
+fstat (\_\_fxstat) (man 2 fstat)
 strtok (man 3 strtok)
 wait (man 2 wait)
 waitpid (man 2 waitpid)
@@ -167,7 +180,7 @@ write (man 2 write)
 Compilation
 Your shell will be compiled this way:
 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 \*.c -o hsh
 Testing
 Your shell should work like this in interactive mode:
 
@@ -190,5 +203,10 @@ $ cat test_ls_2 | ./hsh
 hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
-Checks
-The Checker will be released at the end of the project (1-2 days before the deadline). We strongly encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task 8. Test suite.
+
+> [!NOTE]
+>
+> ### Checks
+>
+> The Checker will be released at the end of the project (1-2 days before the deadline).
+> We strongly encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task 8. Test suite.

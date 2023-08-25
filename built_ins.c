@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * built_ins - function
+ * built_ins - built-in function
  * @CmdTok: command token
  * @TokIndex: token index
  * @envs: environment

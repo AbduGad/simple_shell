@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * signal_handler - handels when the input is ^C doesnt exit
+ * signal_handler - handels when the input is ^C doesn't exit
  * @signum: singnal number
  */
 void signal_handler(int signum)
