@@ -14,7 +14,7 @@ char **make_token(char *cmd, int *TokIndex, char *delim)
 	token = malloc(sizeof(char *));
 	if (token == NULL)
 		return (NULL);
-	if (cmd != NULL)
+	if (cmd != NULL && *cmd != '\0')
 		smalltok = strtok(cmd, delim);
 
 	while (smalltok != NULL)

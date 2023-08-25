@@ -20,7 +20,7 @@ char *get_PATH(char **envs)
 			if (_strlen(envs[envindex]) == 5)
 			{
 				envsclone = malloc(sizeof(char *));
-				envsclone = NULL;
+				*envsclone = '\0';
 				return (envsclone);
 			}
 			envsclone = _strdup(envs[envindex] + 5);
